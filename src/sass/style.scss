@@ -1,0 +1,22 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Lato:wght@400;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.btn {
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';

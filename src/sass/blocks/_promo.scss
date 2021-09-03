@@ -1,0 +1,28 @@
+.promo {
+    background: url(../img/bg.jpg) center center/cover no-repeat;
+    padding-bottom: 180px;
+    &__title {
+        padding-top: 203px;
+        font-weight: 700;
+        font-size: 48px;
+        text-transform: uppercase;
+        span {
+            color: $main-color;
+        }
+    }
+    &__subtitle {
+        margin-top: 80px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    &__list {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    &__item {}
+    &__btn {
+        margin-top: 80px;
+        &_white {}
+    }
+}
+
