@@ -1,5 +1,5 @@
 .promo {
-    background: url(../img/bg.jpg) center center/cover no-repeat;
+    background: url('../img/bg.jpg') center center/cover no-repeat;
     padding-bottom: 180px;
     &__title {
         padding-top: 203px;
@@ -32,8 +32,18 @@
             left: -10px;
         }
     }
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
     &__btn {
         margin-top: 80px;
+        margin-right: 30px;
+        &:active {
+            color: #FFFFFF;
+            background: $main-color;
+            border: 1px solid $border-btn-active;
+        }
     }
 }
 
