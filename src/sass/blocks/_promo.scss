@@ -5,6 +5,7 @@
         padding-top: 203px;
         font-weight: 700;
         font-size: 48px;
+        line-height: 58px;
         text-transform: uppercase;
         span {
             color: $main-color;
@@ -14,15 +15,25 @@
         margin-top: 80px;
         font-weight: 700;
         font-size: 20px;
+        line-height: 24px;
     }
     &__list {
+        padding-top: 10px;
+        padding-left: 20px;
         font-weight: 400;
         font-size: 20px;
+        line-height: 24px;
+        list-style: none;
     }
-    &__item {}
+    &__item {
+        &:before {
+            content: "-";
+            position: relative;
+            left: -10px;
+        }
+    }
     &__btn {
         margin-top: 80px;
-        &_white {}
     }
 }
 

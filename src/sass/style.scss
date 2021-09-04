@@ -5,6 +5,7 @@
 @import 'base/mixins';
 
 * {
+    font-family: 'Raleway', sans-serif;
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -12,11 +13,21 @@
 
 .container {
     margin: 0 auto;
-    width: 1170px;
+    max-width: 1170px;
 }
 
 .btn {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    width: 183px;
+    height: 43px;
+    border-radius: 4px;
+    border: 1px solid $border-btn;
 }
 
 @import 'blocks/header';
 @import 'blocks/promo';
+
+@import 'blocks/meadia';

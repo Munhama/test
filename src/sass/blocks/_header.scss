@@ -15,7 +15,11 @@
         font-weight: 800;
         font-size: 28px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        cursor: pointer;
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
         span {
             color: $main-color;
         }
@@ -35,5 +39,15 @@
         &:last-child {
             padding-right: 0;
         }
+    }
+    &__link {
+        color:#FFFFFF;
+        &:hover {
+            text-decoration: none;
+            color: $main-color;
+        }
+    }
+    .hamburger {
+        display: none;
     }
 }

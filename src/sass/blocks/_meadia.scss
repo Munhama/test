@@ -1,0 +1,91 @@
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 570px;
+    }
+    .header {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__menu {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            right: -100%;
+            width: 50%;
+            height: 100%;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .8);
+            transition: 0.6s all;
+            font-size: 16px;
+            line-height: 35px;
+            &_active {
+                right: 0;
+            }
+        }
+        &__item {
+            padding-right: 0;
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 53%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: $main-color;
+                margin-bottom: 2px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .header {
+        &__menu {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        &__wrapper {
+            justify-content: flex-start;
+        }
+        .hamburger {
+            right: 10px;
+        }
+    }
+}
