@@ -1,3 +1,4 @@
+// hamburger
 window.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger'),
     menuItem = document.querySelectorAll('.header__item'),

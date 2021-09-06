@@ -8,6 +8,18 @@
     .container {
         max-width: 750px;
     }
+    .promo {
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__list {
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -86,7 +98,7 @@
         &__list {
             font-size: 18px;
         }
-        &__btn {
+        &__btn, &__btn-white {
             margin-top: 50px;
         }
     }
@@ -117,7 +129,7 @@
     }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 501px) {
     .promo {
         background: url('../img/bg.jpg') no-repeat 65%/cover;
         &__title {
@@ -134,7 +146,7 @@
         &__wrapper {
             justify-content: space-around;
         }
-        &__btn {
+        &__btn, &__btn-white {
             margin-top: 20px;
             margin-right: 0;
             font-size: 10px;
@@ -143,7 +155,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .header {
         &__wrapper {
             justify-content: flex-start;
@@ -162,7 +174,7 @@
         &__list {
             font-size: 13px;
         }
-        &__btn {
+        &__btn, &__btn-white {
             width: 130px;
         }
     }
