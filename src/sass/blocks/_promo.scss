@@ -42,13 +42,12 @@
         &-white {
             color: #000000;
             background: #FFFFFF;
-            border: 1px solid #6F6D7B;
-        }
-        &:hover {
-            background: $footer-color;
-            border: 1px solid $border-btn;
-            color: #FFFFFF;
+            border: 1px solid $border-btn-white;
+            &:hover {
+                background: $hover-btn-white;
+                color: #000000;
+                border: 1px solid $border-btn-white;
+            }
         }
     }
 }
-
