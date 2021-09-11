@@ -108,22 +108,30 @@
                 </div>
             </div>
             <form action="#" class="order__form">
-                <select class="order__input" name="system-type" id="system">
-                    <option value="">Выберите тип системы</option>
-                    <option value="1">Sed ut perspiciatis</option>
-                    <option value="2">Nemo enim ipsam</option>
-                    <option value="3">Et harum quidem</option>
-                    <option value="4">Temporibus autem</option>
-                    <option value="5">Itaque earum rerum</option>
-                    <option value="6">Lorem ipsum dolor sit</option>
-                    <option value="7">Amet consectetur</option>
-                    <option value="8">Adipisicing elit</option>
-                    <option value="9">Quas veniam amet</option>
-                    <option value="10">Inventore maiores</option>
-                </select>
+                <div class="order__dropdown">
+                    <div class="order__dropdown-name">
+                        <span class="order__dropdown-text">Выберите тип системы</span>
+                        <img src="icons/order/up.svg" alt="up" class="order__dropdown-arrow order__dropdown-arrow_close">
+                        <img src="icons/order/down.svg" alt="down" class="order__dropdown-arrow">
+                    </div>
+                    <div class="order__dropdown-wrapper">
+                        <ul class="order__dropdown-menu">
+                            <li>Sed ut perspiciatis</li>
+                            <li>Nemo enim ipsam</li>
+                            <li>Et harum quidem</li>
+                            <li>Temporibus autem</li>
+                            <li>Itaque earum rerum</li>
+                            <li>Lorem ipsum dolor sit</li>
+                            <li>Amet consectetur</li>
+                            <li>Adipisicing elit</li>
+                            <li>Quas veniam amet</li>
+                            <li>Inventore maiores</li>
+                        </ul>
+                    </div>
+                </div>
+                <input name="system" id="system" type="hidden">
                 <input class="order__input" name="email" id="email" type="email" placeholder="Ваш e-mail">
                 <input class="order__input" name="name" id="name" type="text" placeholder="Ваше имя">
-                
                 <div class="order__range">
                     <div class="order__range-text">
                         <div>Sed ut perspiciatis, unde omnis iste natus</div>
@@ -131,7 +139,6 @@
                     </div>
                     <input class="order__range-slider" name="range" id="range" type="range" min="0" max="100" value="75">
                 </div>
-
                 <input class="order__file" name="file" id="file" type="file" multiple>
                 <label class="order__file-btn" for="file">
                     <span class="order__file-icon"><img src="icons/order/file.svg" alt="file"></span>

@@ -78,18 +78,91 @@
         text-align: center;
         color: #FFFFFF;
     }
-        &__form {
+    &__form {
         margin-top: 80px;
         display: grid;
         grid-template: 48px 64px 48px / repeat(3, 1fr);
         grid-auto-rows: 48px;
         gap: 30px;
     }
+    &__dropdown {
+        background-color: rgb(44, 41, 41);
+        &-name {
+            width: 370px;
+            height: 48px;
+            cursor: pointer;
+            position: relative;
+            padding-left: 10px;
+            padding-top: 12px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $form-text;
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid #FFFFFF;
+            border-radius: 3px;
+            &_opened {
+                color: #FFFFFF;
+                border-radius: 3px 3px 0px 0px;
+                background: rgba(61, 64, 80, 0.85);
+                border: unset;
+            }
+        }
+        &-arrow {
+            position: absolute;
+            top: 21px;
+            right: 16px;
+            &_close {
+                display: none;
+            }
+        }
+        &-wrapper {
+            display: none;
+            width: 370px;
+            position: absolute;
+            border: 1px solid #3D4050;
+            background: rgb(39, 39, 51);
+            border-radius: 0px 0px 3px 3px;
+            &_opened {
+                display: block;
+            }
+        }
+        &-menu {
+            margin-bottom: 0;
+            width: 99%;
+            height: 175px;
+            overflow-y: auto;
+            li {
+                cursor: pointer;
+                margin-left: 10px;
+                font-weight: 400;
+                font-size: 18px;
+                color: #FFFFFF;
+                line-height: 34px;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+            &::-webkit-scrollbar-track {
+                margin: 3px;
+                background: #3D4050;
+                border-radius: 3px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #3E9CDC;
+                border-radius: 3px;
+            }
+        }
+    }
     &__input {
         padding: 10px 12px;
         background: rgba(255, 255, 255, 0.85);
         border: 1px solid #FFFFFF;
         border-radius: 3px;
+        outline: none;
         &::placeholder {
             font-weight: 400;
             font-size: 18px;

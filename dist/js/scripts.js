@@ -42,3 +42,37 @@ Array.prototype.forEach.call(inputs, function (input) {
         label.querySelector('.order__file-text').innerText = labelVal;
     });
 });
+
+// dropdown menu
+const activator = document.querySelector('.order__dropdown-name');
+const menu = document.querySelector('.order__dropdown-wrapper');
+const arrows = document.querySelectorAll('.order__dropdown-arrow');
+let opened = false;
+const setStyleMenu = ()=> {
+    if (opened) {
+        menu.classList.add('order__dropdown-wrapper_opened');
+        activator.classList.add('order__dropdown-name_opened');
+        arrows[0].classList.remove('order__dropdown-arrow_close');
+        arrows[1].classList.add('order__dropdown-arrow_close');
+    } else {
+        menu.classList.remove('order__dropdown-wrapper_opened');
+        activator.classList.remove('order__dropdown-name_opened');
+        arrows[0].classList.add('order__dropdown-arrow_close');
+        arrows[1].classList.remove('order__dropdown-arrow_close');
+    }
+}
+activator.addEventListener('click', ()=>{
+    opened = !opened;
+    setStyleMenu();
+})
+const items = document.querySelectorAll('.order__dropdown-menu > li');
+const text = document.querySelector('.order__dropdown-text');
+const system = document.getElementById('system');
+items.forEach(el=>{
+    el.addEventListener('click', ()=>{
+        text.innerText = el.innerText;
+        system.value = text.innerText;
+        opened = false;
+        setStyleMenu();
+    })
+})
