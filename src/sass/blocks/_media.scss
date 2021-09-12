@@ -134,7 +134,7 @@
         }
     }
     .promo {
-        background: url('../img/promo_bg.png') no-repeat 60%/cover;
+        background: url('../img/promo_bg.webp') no-repeat 60%/cover;
         padding-bottom: 150px;
         &__title {
             padding-top: 170px;
@@ -276,7 +276,7 @@
 
 @media (max-width: 501px) {
     .promo {
-        background: url('../img/promo_bg.png') no-repeat 65%/cover;
+        background: url('../img/promo_bg.webp') no-repeat 65%/cover;
         &__title {
             font-size: 23px;
             line-height: 35px;
